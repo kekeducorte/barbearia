@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="geral.css" />
+    <title>Galeria - Keke Dú Corte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header-fixed">
+    <div class="container-header">
+      <h1 id="Keke" class="logo-titulo">KEKE DÚ CORTE</h1>
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="index.html" class="cta-button-header"><i class="fas fa-arrow-left"></i> Voltar</a></li>
+        </ul>
+      </nav>
+      <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+  
+  <main class="main-content">
+    <section class="container-page fade-in">
+      <h2 class="page-title">Galeria de Cortes</h2>
+      <p class="sub-title">Inspire-se com alguns de nossos trabalhos.</p>
+    
+      <div class="galeria-grid">
+        <!-- Substitua 'https://placehold.co' pelos links das suas imagens -->
+        <div class="galeria-item">
+          <img src="Imagens/0_lwKKwswH-5tEeWnz.jpg" alt="Corte de Cabelo 1" class="galeria-img">
+        </div>
+        <div class="galeria-item">
+          <img src="Imagens/0bd4039e620ec7b2a31b2071fa285ff6.jpg" alt="Corte de Cabelo 2" class="galeria-img">
+        </div>
+        <div class="galeria-item">
+          <img src="Imagens/27f7c2d28ab44ca4b7143396553e6560.jpg" alt="Corte de Cabelo 3" class="galeria-img">
+        </div>
+        <div class="galeria-item">
+          <img src="Imagens/Barba-Linear-5.jpg" alt="Corte de Cabelo 4" class="galeria-img">
+        </div>
+        <div class="galeria-item">
+          <img src="Imagens/Corte-americano-cabelo-crespo-10-683x1024-1.jpeg" alt="Corte de Cabelo 5" class="galeria-img">
+        </div>
+        <div class="galeria-item">
+          <img src="Imagens/cortes-masculinos-2023 (4).jpg" alt="Corte de Cabelo 6" class="galeria-img">
+        </div>
+  </main>
+  
+  <!-- Modal Lightbox (Interatividade da Galeria) -->
+  <div id="lightbox-modal" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Nosso Endereço</h3>
+          <p>[Rua Joaquim Cardoso,Itaquari, Cariacica ES,]</p>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2025 Barbearia do Keke. Melhor de Cariacica.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

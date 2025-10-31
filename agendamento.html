@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="geral.css" />
+    <title>Agendamento - Keke Dú Corte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+     
+     <header class="header-fixed">
+      <div class="container-header">
+        <h1 id="Keke" class="logo-titulo">KEKE DÚ CORTE</h1>
+        <nav class="nav-principal">
+          <ul>
+            <li><a href="index.html" class="cta-button-header"><i class="fas fa-arrow-left"></i> Voltar</a></li>
+          </ul>
+        </nav>
+        <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+    
+    <main class="main-content">
+      <section class="container-page fade-in">
+        
+        <form action="obrigado.html" method="get" class="form-geral card-form">
+          <fieldset id="agendamento">
+              <legend>Agende seu Horário</legend>
+              <div class="aviso-horarios">
+                <p><i class="fas fa-clock"></i> Horário de funcionamento: 8:00 às 18:00</p>
+                <p><i class="fas fa-calendar-times"></i> Não atendemos aos Domingos</p>
+              </div>
+
+              <div class="form-grupo">
+                <label>Dias de preferência:</label>
+                <div class="checkbox-grupo">
+                  <label><input type="checkbox" name="dia_semana" value="segunda"> Segunda</label>
+                  <label><input type="checkbox" name="dia_semana" value="terca"> Terça</label>
+                  <label><input type="checkbox" name="dia_semana" value="quarta"> Quarta</label>
+                  <label><input type="checkbox" name="dia_semana" value="quinta"> Quinta</label>
+                  <label><input type="checkbox" name="dia_semana" value="sexta"> Sexta</label>
+                  <label><input type="checkbox" name="dia_semana" value="sabado"> Sábado</label>
+                </div>
+              </div>
+              
+              <div class="form-grupo">
+                <label for="Pdata">Primeira opção de data:</label>
+                <input type="date" id="Pdata" name="Pdata" required>
+              </div>
+
+              <!-- CAMPO DE HORÁRIO ADICIONADO -->
+              <div class="form-grupo">
+                <label for="horario">Horário de preferência (para a primeira data):</label>
+                <select id="horario" name="horario" required>
+                  <option value="">Selecione um horário</option>
+                  <option value="08:00">08:00</option>
+                  <option value="08:30">08:30</option>
+                  <option value="09:00">09:00</option>
+                  <option value="09:30">09:30</option>
+                  <option value="10:00">10:00</option>
+                  <option value="10:30">10:30</option>
+                  <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
+                  <option value="12:00">12:00 (Almoço)</option>
+                  <option value="12:30">12:30 (Almoço)</option>
+                  <option value="13:00">13:00</option>
+                  <option value="13:30">13:30</option>
+                  <option value="14:00">14:00</option>
+                  <option value="14:30">14:30</option>
+                  <option value="15:00">15:00</option>
+                  <option value="15:30">15:30</option>
+                  <option value="16:00">16:00</option>
+                  <option value="16:30">16:30</option>
+                  <option value="17:00">17:00</option>
+                  <option value="17:30">17:30</option>
+                </select>
+              </div>
+              <!-- FIM DO CAMPO DE HORÁRIO -->
+              
+              <div class="form-grupo">
+                <label for="Sdata">Segunda opção de data (opcional):</label>
+                <input type="date" id="Sdata" name="Sdata">
+              </div>
+
+              <div class="form-grupo">
+                <label for="horario">Horário de preferência (para a Segunda opção de data):</label>
+                <select id="horario" name="horario" required>
+                  <option value="">Selecione um horário</option>
+                  <option value="08:00">08:00</option>
+                  <option value="08:30">08:30</option>
+                  <option value="09:00">09:00</option>
+                  <option value="09:30">09:30</option>
+                  <option value="10:00">10:00</option>
+                  <option value="10:30">10:30</option>
+                  <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
+                  <option value="12:00">12:00 (Almoço)</option>
+                  <option value="12:30">12:30 (Almoço)</option>
+                  <option value="13:00">13:00</option>
+                  <option value="13:30">13:30</option>
+                  <option value="14:00">14:00</option>
+                  <option value="14:30">14:30</option>
+                  <option value="15:00">15:00</option>
+                  <option value="15:30">15:30</option>
+                  <option value="16:00">16:00</option>
+                  <option value="16:30">16:30</option>
+                  <option value="17:00">17:00</option>
+                  <option value="17:30">17:30</option>
+                </select>
+              </div>
+              
+              <button type="submit" class="cta-button">Enviar Pedido de Agendamento</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Nosso Endereço</h3>
+            <p>[Rua Joaquim Cardoso,Itaquari, Cariacica ES,]</p>
+          </div>
+          <div class="footer-copy">
+            <p>&copy; 2025 Barbearia do Keke. Melhor de Cariacica.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
